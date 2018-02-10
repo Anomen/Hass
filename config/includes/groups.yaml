@@ -1,0 +1,116 @@
+##########################################################
+## Views
+##########################################################
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.lights
+    - group.remote
+    - group.security
+    - sensor.presence
+    - timer.leave_home
+
+livingroom_view:
+  view: yes
+  name: Living Room
+  entities:
+    - group.livingroom_lights
+    - group.desktop_lights
+    - group.kitchen_lights
+    - group.security
+    - group.remote
+    - group.tv
+    - group.music
+
+bathroom_view:
+  view: yes
+  name: Bathroom
+  entities:
+    - group.bathroom_lights
+
+bedroom_view:
+  view: yes
+  name: Bedroom
+  entities:
+    - group.bedroom_lights
+
+##########################################################
+## Lights
+##########################################################
+lights:
+  name: Lights
+  entities:
+    - group.livingroom_lights
+    - group.desktop_lights
+    - group.kitchen_lights
+    - group.bathroom_lights
+
+livingroom_lights:
+  name: Living Room
+  entities:
+    - light.salon__left_tv
+    - light.salon__left_sofa
+    - light.salon__stand_lamp
+    - light.salon__tube_ikea
+    - light.hue_color_downlight_1
+    - light.bureau__cloche
+    - switch.living_room_switch
+
+desktop_lights:
+  name: Desktop
+  entities:
+    - light.bureau__cloche
+
+kitchen_lights:
+  name: Kitchen Lights
+  entities:
+    - light.cuisine__four
+    - switch.kitchen_switch
+
+bathroom_lights:
+  name: Bathroom Lights
+  entities:
+    - light.sdb__mirroir_droit
+    - light.sdb__mirroir_gauche
+    - light.sdb__mirroir_milieu
+    - light.sdb__plafond_1
+    - light.sdb__plafond_2
+
+bedroom_lights:
+  name: Bedroom Lights
+  entities:
+    - light.chambre_1
+
+##########################################################
+## By type
+##########################################################
+remote:
+  name: Remote
+  control: hidden
+  entities:
+    - script.music
+    - script.chromecast
+    - script.netflix
+    - script.amazon
+    - script.game
+
+tv:
+  control: hidden
+  name: TV
+  entities:
+    - media_player.tv
+    #- script.1516419972601
+
+music:
+  control: hidden
+  name: Music
+  entities:
+    - media_player.audiocast
+    #- script.1516419484661
+
+security:
+  control: hidden
+  name: Security
+  entities:
+    - lock.lock

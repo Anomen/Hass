@@ -1,0 +1,1540 @@
+2018-01-20 07:26:00.631 Always, OpenZwave Version 1.4.2586 Starting Up
+2018-01-20 07:26:10.592 Info, Setting Up Provided Network Key for Secure Communications
+2018-01-20 07:26:10.592 Warning, Failed - Network Key Not Set
+2018-01-20 07:26:10.592 Info, mgr,     Added driver for controller /dev/ttyUSB0
+2018-01-20 07:26:10.592 Info,   Opening controller /dev/ttyUSB0
+2018-01-20 07:26:10.592 Info, Trying to open serial port /dev/ttyUSB0 (attempt 1)
+2018-01-20 07:26:10.593 Info, Serial port /dev/ttyUSB0 opened (attempt 1)
+2018-01-20 07:26:10.594 Detail, contrlr, Queuing (Command) FUNC_ID_ZW_GET_VERSION: 0x01, 0x03, 0x00, 0x15, 0xe9
+2018-01-20 07:26:10.594 Detail, contrlr, Queuing (Command) FUNC_ID_ZW_MEMORY_GET_ID: 0x01, 0x03, 0x00, 0x20, 0xdc
+2018-01-20 07:26:10.594 Detail, contrlr, Queuing (Command) FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES: 0x01, 0x03, 0x00, 0x05, 0xf9
+2018-01-20 07:26:10.594 Detail, contrlr, Queuing (Command) FUNC_ID_SERIAL_API_GET_CAPABILITIES: 0x01, 0x03, 0x00, 0x07, 0xfb
+2018-01-20 07:26:10.594 Detail, contrlr, Queuing (Command) FUNC_ID_ZW_GET_SUC_NODE_ID: 0x01, 0x03, 0x00, 0x56, 0xaa
+2018-01-20 07:26:10.594 Detail, 
+2018-01-20 07:26:10.594 Info, contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x15) - FUNC_ID_ZW_GET_VERSION: 0x01, 0x03, 0x00, 0x15, 0xe9
+2018-01-20 07:26:10.596 Detail, contrlr,   Received: 0x01, 0x10, 0x01, 0x15, 0x5a, 0x2d, 0x57, 0x61, 0x76, 0x65, 0x20, 0x34, 0x2e, 0x30, 0x35, 0x00, 0x01, 0x97
+2018-01-20 07:26:10.596 Detail, 
+2018-01-20 07:26:10.596 Info, contrlr, Received reply to FUNC_ID_ZW_GET_VERSION:
+2018-01-20 07:26:10.596 Info, contrlr,     Static Controller library, version Z-Wave 4.05
+2018-01-20 07:26:10.596 Detail, Node045,   Expected reply was received
+2018-01-20 07:26:10.596 Detail, Node045,   Message transaction complete
+2018-01-20 07:26:10.597 Detail, 
+2018-01-20 07:26:10.597 Detail, contrlr, Removing current message
+2018-01-20 07:26:10.597 Detail, 
+2018-01-20 07:26:10.597 Info, contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x20) - FUNC_ID_ZW_MEMORY_GET_ID: 0x01, 0x03, 0x00, 0x20, 0xdc
+2018-01-20 07:26:10.599 Detail, contrlr,   Received: 0x01, 0x08, 0x01, 0x20, 0xea, 0x8c, 0xb1, 0xd2, 0x01, 0xd2
+2018-01-20 07:26:10.599 Detail, 
+2018-01-20 07:26:10.599 Info, contrlr, Received reply to FUNC_ID_ZW_MEMORY_GET_ID. Home ID = 0xea8cb1d2.  Our node ID = 1
+2018-01-20 07:26:10.599 Detail, Node140,   Expected reply was received
+2018-01-20 07:26:10.599 Detail, Node140,   Message transaction complete
+2018-01-20 07:26:10.599 Detail, 
+2018-01-20 07:26:10.599 Detail, contrlr, Removing current message
+2018-01-20 07:26:10.599 Detail, 
+2018-01-20 07:26:10.599 Info, contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x05) - FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES: 0x01, 0x03, 0x00, 0x05, 0xf9
+2018-01-20 07:26:10.601 Detail, contrlr,   Received: 0x01, 0x04, 0x01, 0x05, 0x08, 0xf7
+2018-01-20 07:26:10.601 Detail, 
+2018-01-20 07:26:10.601 Info, contrlr, Received reply to FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES:
+2018-01-20 07:26:10.601 Info, contrlr,     There is no SUC ID Server (SIS) in this network.
+2018-01-20 07:26:10.601 Info, contrlr,     The PC controller is a primary controller.
+2018-01-20 07:26:10.601 Detail, Node247,   Expected reply was received
+2018-01-20 07:26:10.601 Detail, Node247,   Message transaction complete
+2018-01-20 07:26:10.601 Detail, 
+2018-01-20 07:26:10.601 Detail, contrlr, Removing current message
+2018-01-20 07:26:10.601 Detail, 
+2018-01-20 07:26:10.601 Info, contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x07) - FUNC_ID_SERIAL_API_GET_CAPABILITIES: 0x01, 0x03, 0x00, 0x07, 0xfb
+2018-01-20 07:26:10.606 Detail, contrlr,   Received: 0x01, 0x2b, 0x01, 0x07, 0x04, 0x20, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0xfe, 0x81, 0xff, 0x88, 0xcf, 0x1f, 0x00, 0x00, 0xfb, 0x9f, 0x7d, 0xa0, 0x67, 0x00, 0x80, 0x80, 0x00, 0x80, 0x86, 0x00, 0x00, 0x00, 0xe8, 0x73, 0x00, 0x00, 0x0e, 0x00, 0x00, 0x60, 0x00, 0x00, 0x03
+2018-01-20 07:26:10.606 Detail, 
+2018-01-20 07:26:10.606 Info, contrlr,  Received reply to FUNC_ID_SERIAL_API_GET_CAPABILITIES
+2018-01-20 07:26:10.606 Info, contrlr,     Serial API Version:   4.32
+2018-01-20 07:26:10.606 Info, contrlr,     Manufacturer ID:      0x0000
+2018-01-20 07:26:10.606 Info, contrlr,     Product Type:         0x0001
+2018-01-20 07:26:10.606 Info, contrlr,     Product ID:           0x0001
+2018-01-20 07:26:10.606 Detail, contrlr, Queuing (Command) FUNC_ID_ZW_GET_RANDOM: 0x01, 0x04, 0x00, 0x1c, 0x20, 0xc7
+2018-01-20 07:26:10.606 Detail, contrlr, Queuing (Command) FUNC_ID_SERIAL_API_GET_INIT_DATA: 0x01, 0x03, 0x00, 0x02, 0xfe
+2018-01-20 07:26:10.606 Detail, contrlr, Queuing (Command) FUNC_ID_SERIAL_API_SET_TIMEOUTS: 0x01, 0x05, 0x00, 0x06, 0x64, 0x0f, 0x97
+2018-01-20 07:26:10.606 Detail, contrlr, Queuing (Command) FUNC_ID_SERIAL_API_APPL_NODE_INFORMATION: 0x01, 0x07, 0x00, 0x03, 0x01, 0x02, 0x01, 0x00, 0xf9
+2018-01-20 07:26:10.606 Detail, Node032,   Expected reply was received
+2018-01-20 07:26:10.606 Detail, Node032,   Message transaction complete
+2018-01-20 07:26:10.607 Detail, 
+2018-01-20 07:26:10.607 Detail, contrlr, Removing current message
+2018-01-20 07:26:10.607 Detail, 
+2018-01-20 07:26:10.607 Info, contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x56) - FUNC_ID_ZW_GET_SUC_NODE_ID: 0x01, 0x03, 0x00, 0x56, 0xaa
+2018-01-20 07:26:10.608 Detail, contrlr,   Received: 0x01, 0x04, 0x01, 0x56, 0x00, 0xac
+2018-01-20 07:26:10.608 Detail, 
+2018-01-20 07:26:10.608 Info, contrlr, Received reply to GET_SUC_NODE_ID.  Node ID = 0
+2018-01-20 07:26:10.608 Info, Controller Does not Support SUC - Cannot Setup Controller as SUC Node
+2018-01-20 07:26:10.608 Detail, Node172,   Expected reply was received
+2018-01-20 07:26:10.608 Detail, Node172,   Message transaction complete
+2018-01-20 07:26:10.608 Detail, 
+2018-01-20 07:26:10.608 Detail, contrlr, Removing current message
+2018-01-20 07:26:10.608 Detail, 
+2018-01-20 07:26:10.608 Info, contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x1c) - FUNC_ID_ZW_GET_RANDOM: 0x01, 0x04, 0x00, 0x1c, 0x20, 0xc7
+2018-01-20 07:26:10.662 Detail, contrlr,   Received: 0x01, 0x25, 0x01, 0x1c, 0x01, 0x20, 0x5b, 0x40, 0x10, 0xbb, 0x9b, 0xf3, 0xef, 0x4c, 0x6a, 0xb9, 0xbe, 0xc3, 0xa6, 0x84, 0x39, 0x75, 0xc2, 0x88, 0x9b, 0xd6, 0x66, 0xed, 0x49, 0x8e, 0xcd, 0xa8, 0xc6, 0xc3, 0xc8, 0x5a, 0x63, 0x57, 0xd0
+2018-01-20 07:26:10.662 Detail, 
+2018-01-20 07:26:10.662 Info, contrlr, Received reply to FUNC_ID_ZW_GET_RANDOM: true
+2018-01-20 07:26:10.662 Detail, Node032,   Expected reply was received
+2018-01-20 07:26:10.662 Detail, Node032,   Message transaction complete
+2018-01-20 07:26:10.662 Detail, 
+2018-01-20 07:26:10.662 Detail, contrlr, Removing current message
+2018-01-20 07:26:10.662 Detail, 
+2018-01-20 07:26:10.662 Info, contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x02) - FUNC_ID_SERIAL_API_GET_INIT_DATA: 0x01, 0x03, 0x00, 0x02, 0xfe
+2018-01-20 07:26:10.718 Detail, contrlr,   Received: 0x01, 0x25, 0x01, 0x02, 0x05, 0x00, 0x1d, 0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0x00, 0xc3
+2018-01-20 07:26:10.718 Detail, 
+2018-01-20 07:26:10.718 Info, mgr,     Driver with Home ID of 0xea8cb1d2 is now ready.
+2018-01-20 07:26:10.719 Info, 
+2018-01-20 07:26:10.724 Detail, Node002, Queuing (Controller) Delete All Return Routes
+2018-01-20 07:26:10.725 Detail, Node002, Queuing (Controller) Assign Return Route
+2018-01-20 07:26:10.725 Info, contrlr, Received reply to FUNC_ID_SERIAL_API_GET_INIT_DATA:
+2018-01-20 07:26:10.725 Info, contrlr,     Node 001 - Known
+2018-01-20 07:26:10.725 Detail, Node001, AdvanceQueries queryPending=0 queryRetries=0 queryStage=CacheLoad live=1
+2018-01-20 07:26:10.726 Detail, Node001, QueryStage_CacheLoad
+2018-01-20 07:26:10.726 Info, Node001, Node Identity Codes: 0000:0001:0001
+2018-01-20 07:26:10.726 Detail, Node001, QueryStage_Associations
+2018-01-20 07:26:10.726 Detail, Node001, QueryStage_Neighbors
+2018-01-20 07:26:10.726 Detail, contrlr, Requesting routing info (neighbor list) for Node 1
+2018-01-20 07:26:10.726 Detail, Node001, Queuing (Command) Get Routing Info (Node=1): 0x01, 0x07, 0x00, 0x80, 0x01, 0x00, 0x00, 0x03, 0x7a
+2018-01-20 07:26:10.726 Detail, Node001, Queuing (Query) Query Stage Complete (Neighbors)
+2018-01-20 07:26:10.726 Info, contrlr,     Node 002 - Known
+2018-01-20 07:26:10.726 Detail, Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=CacheLoad live=1
+2018-01-20 07:26:10.726 Detail, Node002, QueryStage_CacheLoad
+2018-01-20 07:26:10.726 Info, Node002, Node Identity Codes: 0258:0003:0087
+2018-01-20 07:26:10.726 Info, Node002, NoOperation::Set - Routing=true
+2018-01-20 07:26:10.726 Detail, Node002, Queuing (NoOp) NoOperation_Set (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x00, 0x00, 0x25, 0x0a, 0xca
+2018-01-20 07:26:10.726 Detail, Node002, Queuing (Query) Query Stage Complete (CacheLoad)
+2018-01-20 07:26:10.726 Info, contrlr,     Node 003 - Known
+2018-01-20 07:26:10.726 Detail, Node003, AdvanceQueries queryPending=0 queryRetries=0 queryStage=CacheLoad live=1
+2018-01-20 07:26:10.726 Detail, Node003, QueryStage_CacheLoad
+2018-01-20 07:26:10.726 Info, Node003, Node Identity Codes: 0000:0000:0000
+2018-01-20 07:26:10.726 Info, Node003, NoOperation::Set - Routing=true
+2018-01-20 07:26:10.726 Detail, Node003, Queuing (NoOp) NoOperation_Set (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x00, 0x00, 0x25, 0x0b, 0xca
+2018-01-20 07:26:10.726 Detail, Node003, Queuing (Query) Query Stage Complete (CacheLoad)
+2018-01-20 07:26:10.726 Detail,   Expected reply was received
+2018-01-20 07:26:10.726 Detail,   Message transaction complete
+2018-01-20 07:26:10.726 Detail, 
+2018-01-20 07:26:10.726 Detail, contrlr, Removing current message
+2018-01-20 07:26:10.726 Detail, Node001, Notification: DriverReady
+2018-01-20 07:26:10.734 Detail, Node001, Notification: NodeAdded
+2018-01-20 07:26:10.747 Detail, Node001, Notification: NodeProtocolInfo
+2018-01-20 07:26:10.750 Detail, Node001, Notification: EssentialNodeQueriesComplete
+2018-01-20 07:26:10.752 Detail, Node001, Notification: ValueAdded
+2018-01-20 07:26:10.762 Detail, Node002, Notification: NodeAdded
+2018-01-20 07:26:10.771 Detail, Node002, Notification: NodeProtocolInfo
+2018-01-20 07:26:10.774 Detail, Node002, Notification: EssentialNodeQueriesComplete
+2018-01-20 07:26:10.776 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.787 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.808 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.814 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.823 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.831 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.839 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.845 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.854 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.863 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.869 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.877 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.883 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.893 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.900 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.907 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.911 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.913 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.916 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.919 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.921 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.924 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.928 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.930 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.933 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.939 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.942 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.944 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.947 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.949 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.954 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.961 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.968 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.976 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.981 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.985 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.987 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.989 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.992 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.996 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:10.999 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:11.003 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:11.005 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:11.008 Detail, Node002, Notification: Group
+2018-01-20 07:26:11.008 Detail, Node002, Notification: Group
+2018-01-20 07:26:11.009 Detail, Node002, Notification: Group
+2018-01-20 07:26:11.010 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:11.012 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:11.017 Detail, Node002, Notification: ValueAdded
+2018-01-20 07:26:11.019 Detail, Node002, Notification: NodeNaming
+2018-01-20 07:26:11.020 Detail, Node003, Notification: NodeAdded
+2018-01-20 07:26:11.023 Detail, Node003, Notification: NodeProtocolInfo
+2018-01-20 07:26:11.024 Detail, Node003, Notification: EssentialNodeQueriesComplete
+2018-01-20 07:26:11.025 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.030 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.035 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.040 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.052 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.082 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.089 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.095 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.101 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.105 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.110 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.115 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.120 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.127 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.133 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.139 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.143 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.147 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.151 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.157 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.162 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.167 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.172 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.177 Detail, Node003, Notification: ValueAdded
+2018-01-20 07:26:11.182 Detail, 
+2018-01-20 07:26:11.182 Info, contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x06) - FUNC_ID_SERIAL_API_SET_TIMEOUTS: 0x01, 0x05, 0x00, 0x06, 0x64, 0x0f, 0x97
+2018-01-20 07:26:11.184 Detail, contrlr,   Received: 0x01, 0x05, 0x01, 0x06, 0x64, 0x0f, 0x96
+2018-01-20 07:26:11.184 Detail, 
+2018-01-20 07:26:11.184 Info, contrlr, Received reply to FUNC_ID_SERIAL_API_SET_TIMEOUTS
+2018-01-20 07:26:11.184 Detail, Node015,   Expected reply was received
+2018-01-20 07:26:11.184 Detail, Node015,   Message transaction complete
+2018-01-20 07:26:11.184 Detail, 
+2018-01-20 07:26:11.184 Detail, contrlr, Removing current message
+2018-01-20 07:26:11.184 Detail, 
+2018-01-20 07:26:11.184 Info, contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x00) - FUNC_ID_SERIAL_API_APPL_NODE_INFORMATION: 0x01, 0x07, 0x00, 0x03, 0x01, 0x02, 0x01, 0x00, 0xf9
+2018-01-20 07:26:11.185 Detail, contrlr, Removing current message
+2018-01-20 07:26:11.185 Detail, 
+2018-01-20 07:26:11.185 Info, Node001, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=1): 0x01, 0x07, 0x00, 0x80, 0x01, 0x00, 0x00, 0x03, 0x7a
+2018-01-20 07:26:11.191 Detail, Node001,   Received: 0x01, 0x20, 0x01, 0x80, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x5c
+2018-01-20 07:26:11.191 Detail, 
+2018-01-20 07:26:11.191 Info, Node001, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-01-20 07:26:11.191 Info, Node001,     Neighbors of this node are:
+2018-01-20 07:26:11.191 Info, Node001,     Node 2
+2018-01-20 07:26:11.191 Detail,   Expected reply was received
+2018-01-20 07:26:11.191 Detail,   Message transaction complete
+2018-01-20 07:26:11.191 Detail, 
+2018-01-20 07:26:11.191 Detail, Node001, Removing current message
+2018-01-20 07:26:11.191 Detail, 
+2018-01-20 07:26:11.191 Info, Node002, Sending (NoOp) message (Callback ID=0x0a, Expected Reply=0x13) - NoOperation_Set (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x00, 0x00, 0x25, 0x0a, 0xca
+2018-01-20 07:26:11.196 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:11.196 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:11.211 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x0a, 0x00, 0xe3
+2018-01-20 07:26:11.211 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x0a received (expected 0x0a)
+2018-01-20 07:26:11.211 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:11.211 Detail,   Expected callbackId was received
+2018-01-20 07:26:11.211 Detail,   Expected reply was received
+2018-01-20 07:26:11.211 Detail,   Message transaction complete
+2018-01-20 07:26:11.211 Detail, 
+2018-01-20 07:26:11.211 Detail, Node002, Removing current message
+2018-01-20 07:26:11.211 Detail, Node002, Notification: Notification - NoOperation
+2018-01-20 07:26:11.217 Detail, 
+2018-01-20 07:26:11.217 Info, Node003, Sending (NoOp) message (Callback ID=0x0b, Expected Reply=0x13) - NoOperation_Set (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x00, 0x00, 0x25, 0x0b, 0xca
+2018-01-20 07:26:11.273 Detail, Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:11.273 Detail, Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:18.470 Detail, Node003,   Received: 0x01, 0x05, 0x00, 0x13, 0x0b, 0x01, 0xe3
+2018-01-20 07:26:18.470 Detail, Node003,   ZW_SEND_DATA Request with callback ID 0x0b received (expected 0x0b)
+2018-01-20 07:26:18.470 Info, Node003, WARNING: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2018-01-20 07:26:18.470 Warning, Node003, WARNING: Device is not a sleeping node.
+2018-01-20 07:26:18.470 Info, Node003, QueryStageRetry stage CacheLoad requested stage CacheLoad max 3 retries 0 pending 1
+2018-01-20 07:26:18.470 Detail, Node001,   Expected callbackId was received
+2018-01-20 07:26:18.470 Detail, Node001,   Expected reply was received
+2018-01-20 07:26:18.470 Detail, Node001,   Message transaction complete
+2018-01-20 07:26:18.470 Detail, 
+2018-01-20 07:26:18.470 Detail, Node003, Removing current message
+2018-01-20 07:26:18.470 Detail, Node003, Notification: Notification - NoOperation
+2018-01-20 07:26:18.474 Info, Deleting all return routes from node 2
+2018-01-20 07:26:18.474 Detail, Node002, Queuing (Command) ControllerCommand_DeleteAllReturnRoutess (Node=2): 0x01, 0x05, 0x00, 0x47, 0x02, 0x0c, 0xb3
+2018-01-20 07:26:18.474 Detail, Notification: ControllerCommand - Starting
+2018-01-20 07:26:18.477 Detail, 
+2018-01-20 07:26:18.477 Info, Node002, Sending (Command) message (Callback ID=0x0c, Expected Reply=0x47) - ControllerCommand_DeleteAllReturnRoutess (Node=2): 0x01, 0x05, 0x00, 0x47, 0x02, 0x0c, 0xb3
+2018-01-20 07:26:18.482 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x47, 0x01, 0xbc
+2018-01-20 07:26:18.482 Detail, 
+2018-01-20 07:26:18.482 Info, Node002, Received reply to FUNC_ID_ZW_DELETE_RETURN_ROUTE - command in progress
+2018-01-20 07:26:18.482 Detail, Notification: ControllerCommand - InProgress
+2018-01-20 07:26:18.576 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x47, 0x0c, 0x00, 0xb1
+2018-01-20 07:26:18.576 Detail, 
+2018-01-20 07:26:18.576 Info, Node002, Received reply to FUNC_ID_ZW_DELETE_RETURN_ROUTE for node 2 - SUCCESS
+2018-01-20 07:26:18.576 Detail,   Expected callbackId was received
+2018-01-20 07:26:18.577 Detail,   Expected reply was received
+2018-01-20 07:26:18.577 Detail,   Message transaction complete
+2018-01-20 07:26:18.577 Detail, 
+2018-01-20 07:26:18.577 Detail, Node002, Removing current message
+2018-01-20 07:26:18.577 Detail, Notification: ControllerCommand - Completed
+2018-01-20 07:26:18.589 Info, Assigning return route from node 2 to node 1
+2018-01-20 07:26:18.589 Detail, Node002, Queuing (Command) ControllerCommand_AssignReturnRoute (Node=2): 0x01, 0x06, 0x00, 0x46, 0x02, 0x01, 0x0d, 0xb1
+2018-01-20 07:26:18.589 Detail, Notification: ControllerCommand - Starting
+2018-01-20 07:26:18.594 Detail, 
+2018-01-20 07:26:18.594 Info, Node002, Sending (Command) message (Callback ID=0x0d, Expected Reply=0x46) - ControllerCommand_AssignReturnRoute (Node=2): 0x01, 0x06, 0x00, 0x46, 0x02, 0x01, 0x0d, 0xb1
+2018-01-20 07:26:18.603 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x46, 0x01, 0xbd
+2018-01-20 07:26:18.603 Detail, 
+2018-01-20 07:26:18.603 Info, Node002, Received reply to FUNC_ID_ZW_ASSIGN_RETURN_ROUTE - command in progress
+2018-01-20 07:26:18.603 Detail, Notification: ControllerCommand - InProgress
+2018-01-20 07:26:18.828 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x46, 0x0d, 0x00, 0xb1
+2018-01-20 07:26:18.828 Detail, 
+2018-01-20 07:26:18.828 Info, Node002, Received reply to FUNC_ID_ZW_ASSIGN_RETURN_ROUTE for node 2 - SUCCESS
+2018-01-20 07:26:18.828 Detail,   Expected callbackId was received
+2018-01-20 07:26:18.828 Detail,   Expected reply was received
+2018-01-20 07:26:18.828 Detail,   Message transaction complete
+2018-01-20 07:26:18.828 Detail, 
+2018-01-20 07:26:18.828 Detail, Node002, Removing current message
+2018-01-20 07:26:18.828 Detail, Notification: ControllerCommand - Completed
+2018-01-20 07:26:18.831 Detail, Node001, Query Stage Complete (Neighbors)
+2018-01-20 07:26:18.831 Detail, Node001, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Session live=1
+2018-01-20 07:26:18.831 Detail, Node001, QueryStage_Session
+2018-01-20 07:26:18.831 Detail, Node001, QueryStage_Dynamic
+2018-01-20 07:26:18.831 Detail, Node001, QueryStage_Configuration
+2018-01-20 07:26:18.831 Detail, Node001, QueryStage_Complete
+2018-01-20 07:26:18.831 Warning, CheckCompletedNodeQueries m_allNodesQueried=0 m_awakeNodesQueried=0
+2018-01-20 07:26:18.831 Warning, CheckCompletedNodeQueries all=0, deadFound=0 sleepingOnly=0
+2018-01-20 07:26:18.831 Detail, Node001, Notification: NodeQueriesComplete
+2018-01-20 07:26:18.835 Detail, Node002, Query Stage Complete (CacheLoad)
+2018-01-20 07:26:18.835 Detail, Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Associations live=1
+2018-01-20 07:26:18.835 Detail, Node002, QueryStage_Associations
+2018-01-20 07:26:18.835 Info, Node002, Number of association groups reported for node 2 is 3.
+2018-01-20 07:26:18.835 Info, Node002, Get Associations for group 1 of node 2
+2018-01-20 07:26:18.835 Detail, Node002, Queuing (Send) AssociationCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x85, 0x02, 0x01, 0x25, 0x0e, 0x4a
+2018-01-20 07:26:18.835 Detail, Node002, Queuing (Query) Query Stage Complete (Associations)
+2018-01-20 07:26:18.835 Detail, 
+2018-01-20 07:26:18.835 Info, Node002, Sending (Send) message (Callback ID=0x0e, Expected Reply=0x04) - AssociationCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x85, 0x02, 0x01, 0x25, 0x0e, 0x4a
+2018-01-20 07:26:18.841 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:18.841 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:18.856 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x0e, 0x00, 0xe7
+2018-01-20 07:26:18.856 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x0e received (expected 0x0e)
+2018-01-20 07:26:18.856 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:18.856 Detail,   Expected callbackId was received
+2018-01-20 07:26:18.867 Detail, Node002,   Received: 0x01, 0x0c, 0x00, 0x04, 0x00, 0x02, 0x06, 0x85, 0x03, 0x01, 0x05, 0x00, 0x01, 0x70
+2018-01-20 07:26:18.867 Detail, 
+2018-01-20 07:26:18.867 Info, Node002, Response RTT 31 Average Response RTT 31
+2018-01-20 07:26:18.867 Info, Node002, Received Association report from node 2, group 1, containing 1 associations
+2018-01-20 07:26:18.867 Info, Node002,   The group contains:
+2018-01-20 07:26:18.867 Info, Node002,     Node 1
+2018-01-20 07:26:18.867 Info, Node002, Get Associations for group 2 of node 2
+2018-01-20 07:26:18.867 Detail, Node002, Queuing (Send) AssociationCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x85, 0x02, 0x02, 0x25, 0x0f, 0x48
+2018-01-20 07:26:18.867 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:18.867 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:18.867 Detail, 
+2018-01-20 07:26:18.867 Detail, Node002, Removing current message
+2018-01-20 07:26:18.867 Detail, 
+2018-01-20 07:26:18.867 Info, Node002, Sending (Send) message (Callback ID=0x0f, Expected Reply=0x04) - AssociationCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x85, 0x02, 0x02, 0x25, 0x0f, 0x48
+2018-01-20 07:26:18.873 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:18.873 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:18.888 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x0f, 0x00, 0xe6
+2018-01-20 07:26:18.888 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x0f received (expected 0x0f)
+2018-01-20 07:26:18.888 Info, Node002, Request RTT 21 Average Request RTT 20
+2018-01-20 07:26:18.888 Detail,   Expected callbackId was received
+2018-01-20 07:26:18.899 Detail, Node002,   Received: 0x01, 0x0b, 0x00, 0x04, 0x00, 0x02, 0x05, 0x85, 0x03, 0x02, 0x05, 0x00, 0x76
+2018-01-20 07:26:18.899 Detail, 
+2018-01-20 07:26:18.899 Info, Node002, Response RTT 31 Average Response RTT 31
+2018-01-20 07:26:18.899 Info, Node002, Received Association report from node 2, group 2, containing 0 associations
+2018-01-20 07:26:18.899 Info, Node002, Get Associations for group 3 of node 2
+2018-01-20 07:26:18.899 Detail, Node002, Queuing (Send) AssociationCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x85, 0x02, 0x03, 0x25, 0x10, 0x56
+2018-01-20 07:26:18.899 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:18.899 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:18.899 Detail, 
+2018-01-20 07:26:18.899 Detail, Node002, Removing current message
+2018-01-20 07:26:18.899 Detail, Node002, Notification: Group
+2018-01-20 07:26:18.902 Detail, 
+2018-01-20 07:26:18.902 Info, Node002, Sending (Send) message (Callback ID=0x10, Expected Reply=0x04) - AssociationCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x85, 0x02, 0x03, 0x25, 0x10, 0x56
+2018-01-20 07:26:18.908 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:18.908 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:18.923 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x10, 0x00, 0xf9
+2018-01-20 07:26:18.923 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x10 received (expected 0x10)
+2018-01-20 07:26:18.923 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:18.923 Detail,   Expected callbackId was received
+2018-01-20 07:26:18.934 Detail, Node002,   Received: 0x01, 0x0b, 0x00, 0x04, 0x00, 0x02, 0x05, 0x85, 0x03, 0x03, 0x05, 0x00, 0x77
+2018-01-20 07:26:18.934 Detail, 
+2018-01-20 07:26:18.934 Info, Node002, Response RTT 31 Average Response RTT 31
+2018-01-20 07:26:18.934 Info, Node002, Received Association report from node 2, group 3, containing 0 associations
+2018-01-20 07:26:18.934 Info, Node002, Querying associations for node 2 is complete.
+2018-01-20 07:26:18.934 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:18.934 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:18.934 Detail, 
+2018-01-20 07:26:18.934 Detail, Node002, Removing current message
+2018-01-20 07:26:18.934 Detail, Node002, Notification: Group
+2018-01-20 07:26:18.947 Detail, Node003, Query Stage Complete (CacheLoad)
+2018-01-20 07:26:18.947 Detail, Node003, AdvanceQueries queryPending=0 queryRetries=1 queryStage=CacheLoad live=1
+2018-01-20 07:26:18.947 Detail, Node003, QueryStage_CacheLoad
+2018-01-20 07:26:18.947 Info, Node003, Node Identity Codes: 0000:0000:0000
+2018-01-20 07:26:18.947 Info, Node003, NoOperation::Set - Routing=true
+2018-01-20 07:26:18.947 Detail, Node003, Queuing (NoOp) NoOperation_Set (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x00, 0x00, 0x25, 0x11, 0xd0
+2018-01-20 07:26:18.947 Detail, Node003, Queuing (Query) Query Stage Complete (CacheLoad)
+2018-01-20 07:26:18.947 Detail, 
+2018-01-20 07:26:18.947 Info, Node003, Sending (NoOp) message (Callback ID=0x11, Expected Reply=0x13) - NoOperation_Set (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x00, 0x00, 0x25, 0x11, 0xd0
+2018-01-20 07:26:19.003 Detail, Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:19.003 Detail, Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:26.192 Detail, Node003,   Received: 0x01, 0x05, 0x00, 0x13, 0x11, 0x01, 0xf9
+2018-01-20 07:26:26.192 Detail, Node003,   ZW_SEND_DATA Request with callback ID 0x11 received (expected 0x11)
+2018-01-20 07:26:26.192 Info, Node003, WARNING: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2018-01-20 07:26:26.192 Warning, Node003, WARNING: Device is not a sleeping node.
+2018-01-20 07:26:26.192 Info, Node003, QueryStageRetry stage CacheLoad requested stage CacheLoad max 3 retries 1 pending 1
+2018-01-20 07:26:26.192 Detail, Node001,   Expected callbackId was received
+2018-01-20 07:26:26.192 Detail, Node001,   Expected reply was received
+2018-01-20 07:26:26.192 Detail, Node001,   Message transaction complete
+2018-01-20 07:26:26.192 Detail, 
+2018-01-20 07:26:26.192 Detail, Node003, Removing current message
+2018-01-20 07:26:26.192 Detail, Node003, Notification: Notification - NoOperation
+2018-01-20 07:26:26.196 Detail, Node002, Query Stage Complete (Associations)
+2018-01-20 07:26:26.196 Detail, Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Neighbors live=1
+2018-01-20 07:26:26.196 Detail, Node002, QueryStage_Neighbors
+2018-01-20 07:26:26.196 Detail, Requesting routing info (neighbor list) for Node 2
+2018-01-20 07:26:26.196 Detail, Node002, Queuing (Command) Get Routing Info (Node=2): 0x01, 0x07, 0x00, 0x80, 0x02, 0x00, 0x00, 0x03, 0x79
+2018-01-20 07:26:26.196 Detail, Node002, Queuing (Query) Query Stage Complete (Neighbors)
+2018-01-20 07:26:26.196 Detail, 
+2018-01-20 07:26:26.196 Info, Node002, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=2): 0x01, 0x07, 0x00, 0x80, 0x02, 0x00, 0x00, 0x03, 0x79
+2018-01-20 07:26:26.202 Detail, Node002,   Received: 0x01, 0x20, 0x01, 0x80, 0x05, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x5b
+2018-01-20 07:26:26.202 Detail, 
+2018-01-20 07:26:26.202 Info, Node002, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-01-20 07:26:26.202 Info, Node002,     Neighbors of this node are:
+2018-01-20 07:26:26.202 Info, Node002,     Node 1
+2018-01-20 07:26:26.202 Info, Node002,     Node 3
+2018-01-20 07:26:26.202 Detail,   Expected reply was received
+2018-01-20 07:26:26.202 Detail,   Message transaction complete
+2018-01-20 07:26:26.202 Detail, 
+2018-01-20 07:26:26.202 Detail, Node002, Removing current message
+2018-01-20 07:26:26.202 Detail, Node003, Query Stage Complete (CacheLoad)
+2018-01-20 07:26:26.202 Detail, Node003, AdvanceQueries queryPending=0 queryRetries=2 queryStage=CacheLoad live=1
+2018-01-20 07:26:26.202 Detail, Node003, QueryStage_CacheLoad
+2018-01-20 07:26:26.202 Info, Node003, Node Identity Codes: 0000:0000:0000
+2018-01-20 07:26:26.202 Info, Node003, NoOperation::Set - Routing=true
+2018-01-20 07:26:26.202 Detail, Node003, Queuing (NoOp) NoOperation_Set (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x00, 0x00, 0x25, 0x12, 0xd3
+2018-01-20 07:26:26.202 Detail, Node003, Queuing (Query) Query Stage Complete (CacheLoad)
+2018-01-20 07:26:26.202 Detail, 
+2018-01-20 07:26:26.203 Info, Node003, Sending (NoOp) message (Callback ID=0x12, Expected Reply=0x13) - NoOperation_Set (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x00, 0x00, 0x25, 0x12, 0xd3
+2018-01-20 07:26:26.259 Detail, Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:26.259 Detail, Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:33.607 Detail, Node003,   Received: 0x01, 0x05, 0x00, 0x13, 0x12, 0x01, 0xfa
+2018-01-20 07:26:33.607 Detail, Node003,   ZW_SEND_DATA Request with callback ID 0x12 received (expected 0x12)
+2018-01-20 07:26:33.607 Info, Node003, WARNING: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2018-01-20 07:26:33.607 Warning, Node003, WARNING: Device is not a sleeping node.
+2018-01-20 07:26:33.607 Error, Node003, ERROR: node presumed dead
+2018-01-20 07:26:33.607 Warning, CheckCompletedNodeQueries m_allNodesQueried=0 m_awakeNodesQueried=0
+2018-01-20 07:26:33.607 Warning, CheckCompletedNodeQueries all=0, deadFound=1 sleepingOnly=0
+2018-01-20 07:26:33.607 Info, Node003, QueryStageRetry stage CacheLoad requested stage CacheLoad max 3 retries 2 pending 1
+2018-01-20 07:26:33.607 Detail, Node001,   Expected callbackId was received
+2018-01-20 07:26:33.607 Detail, Node001,   Expected reply was received
+2018-01-20 07:26:33.607 Detail, Node001,   Message transaction complete
+2018-01-20 07:26:33.607 Detail, 
+2018-01-20 07:26:33.607 Detail, Node003, Removing current message
+2018-01-20 07:26:33.607 Detail, Node003, Notification: Notification - NoOperation
+2018-01-20 07:26:33.611 Detail, Node003, Notification: Notification - Node Dead
+2018-01-20 07:26:33.614 Detail, Node002, Query Stage Complete (Neighbors)
+2018-01-20 07:26:33.614 Detail, Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Session live=1
+2018-01-20 07:26:33.614 Detail, Node002, QueryStage_Session
+2018-01-20 07:26:33.614 Detail, Node002, Queuing (Query) SwitchAllCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x27, 0x02, 0x25, 0x13, 0xf6
+2018-01-20 07:26:33.614 Detail, Node002, Queuing (Query) PowerlevelCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x73, 0x02, 0x25, 0x14, 0xa5
+2018-01-20 07:26:33.614 Detail, Node002, Queuing (Query) Query Stage Complete (Session)
+2018-01-20 07:26:33.614 Detail, Node003, Query Stage Complete (CacheLoad)
+2018-01-20 07:26:33.614 Detail, Node003, AdvanceQueries queryPending=0 queryRetries=0 queryStage=CacheLoad live=0
+2018-01-20 07:26:33.615 Detail, 
+2018-01-20 07:26:33.615 Info, Node002, Sending (Query) message (Callback ID=0x13, Expected Reply=0x04) - SwitchAllCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x27, 0x02, 0x25, 0x13, 0xf6
+2018-01-20 07:26:33.620 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:33.620 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:33.635 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x13, 0x00, 0xfa
+2018-01-20 07:26:33.635 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x13 received (expected 0x13)
+2018-01-20 07:26:33.635 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:33.635 Detail,   Expected callbackId was received
+2018-01-20 07:26:33.645 Detail, Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x27, 0x03, 0x00, 0xd7
+2018-01-20 07:26:33.645 Detail, 
+2018-01-20 07:26:33.645 Info, Node002, Response RTT 30 Average Response RTT 30
+2018-01-20 07:26:33.645 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.645 Info, Node002, Received SwitchAll report from node 2: Disabled
+2018-01-20 07:26:33.645 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:33.645 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:33.645 Detail, 
+2018-01-20 07:26:33.645 Detail, Node002, Removing current message
+2018-01-20 07:26:33.645 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.652 Detail, 
+2018-01-20 07:26:33.652 Info, Node002, Sending (Query) message (Callback ID=0x14, Expected Reply=0x04) - PowerlevelCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x73, 0x02, 0x25, 0x14, 0xa5
+2018-01-20 07:26:33.658 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:33.658 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:33.672 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x14, 0x00, 0xfd
+2018-01-20 07:26:33.672 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x14 received (expected 0x14)
+2018-01-20 07:26:33.672 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:33.673 Detail,   Expected callbackId was received
+2018-01-20 07:26:33.683 Detail, Node002,   Received: 0x01, 0x0a, 0x00, 0x04, 0x00, 0x02, 0x04, 0x73, 0x03, 0x00, 0x00, 0x87
+2018-01-20 07:26:33.683 Detail, 
+2018-01-20 07:26:33.683 Info, Node002, Response RTT 30 Average Response RTT 30
+2018-01-20 07:26:33.683 Info, Node002, Received a PowerLevel report: PowerLevel=Normal, Timeout=0
+2018-01-20 07:26:33.683 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.683 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.683 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:33.683 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:33.683 Detail, 
+2018-01-20 07:26:33.683 Detail, Node002, Removing current message
+2018-01-20 07:26:33.683 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.690 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.696 Detail, Node002, Query Stage Complete (Session)
+2018-01-20 07:26:33.697 Detail, Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Dynamic live=1
+2018-01-20 07:26:33.697 Detail, Node002, QueryStage_Dynamic
+2018-01-20 07:26:33.697 Detail, Node002, Queuing (Send) SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x25, 0x15, 0xf2
+2018-01-20 07:26:33.697 Detail, Node002, Queuing (Send) MeterCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x32, 0x01, 0x00, 0x25, 0x16, 0xe7
+2018-01-20 07:26:33.697 Detail, Node002, Queuing (Send) MeterCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x32, 0x01, 0x10, 0x25, 0x17, 0xf6
+2018-01-20 07:26:33.697 Detail, Node002, Queuing (Send) MeterCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x32, 0x01, 0x20, 0x25, 0x18, 0xc9
+2018-01-20 07:26:33.697 Detail, Node002, Queuing (Send) MeterCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x32, 0x01, 0x28, 0x25, 0x19, 0xc0
+2018-01-20 07:26:33.697 Detail, Node002, Queuing (Send) AlarmCmd_Get (Node=2): 0x01, 0x0c, 0x00, 0x13, 0x02, 0x05, 0x71, 0x04, 0x00, 0x08, 0x01, 0x25, 0x1a, 0xa4
+2018-01-20 07:26:33.697 Detail, Node002, Queuing (Query) Query Stage Complete (Dynamic)
+2018-01-20 07:26:33.697 Detail, 
+2018-01-20 07:26:33.697 Info, Node002, Sending (Send) message (Callback ID=0x15, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x25, 0x15, 0xf2
+2018-01-20 07:26:33.703 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:33.703 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:33.717 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x15, 0x00, 0xfc
+2018-01-20 07:26:33.717 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x15 received (expected 0x15)
+2018-01-20 07:26:33.717 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:33.717 Detail,   Expected callbackId was received
+2018-01-20 07:26:33.727 Detail, Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x25, 0x03, 0xff, 0x2a
+2018-01-20 07:26:33.728 Detail, 
+2018-01-20 07:26:33.728 Info, Node002, Response RTT 30 Average Response RTT 30
+2018-01-20 07:26:33.728 Info, Node002, Received SwitchBinary report from node 2: level=On
+2018-01-20 07:26:33.728 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.728 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:33.728 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:33.728 Detail, 
+2018-01-20 07:26:33.728 Detail, Node002, Removing current message
+2018-01-20 07:26:33.728 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.732 Detail, 
+2018-01-20 07:26:33.732 Info, Node002, Sending (Send) message (Callback ID=0x16, Expected Reply=0x04) - MeterCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x32, 0x01, 0x00, 0x25, 0x16, 0xe7
+2018-01-20 07:26:33.738 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:33.738 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:33.753 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x16, 0x00, 0xff
+2018-01-20 07:26:33.753 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x16 received (expected 0x16)
+2018-01-20 07:26:33.753 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:33.753 Detail,   Expected callbackId was received
+2018-01-20 07:26:33.777 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x01, 0x07, 0x00, 0x00, 0x00, 0x02, 0xb0
+2018-01-20 07:26:33.777 Detail, 
+2018-01-20 07:26:33.777 Info, Node002, Response RTT 45 Average Response RTT 37
+2018-01-20 07:26:33.777 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.777 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 07:26:33.777 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.777 Info, Node002,     Previous value was 0.02kWh, received 263 seconds ago.
+2018-01-20 07:26:33.777 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.777 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.777 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:33.777 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:33.777 Detail, 
+2018-01-20 07:26:33.777 Detail, Node002, Removing current message
+2018-01-20 07:26:33.777 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.780 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.783 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.785 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.788 Detail, 
+2018-01-20 07:26:33.788 Info, Node002, Sending (Send) message (Callback ID=0x17, Expected Reply=0x04) - MeterCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x32, 0x01, 0x10, 0x25, 0x17, 0xf6
+2018-01-20 07:26:33.794 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:33.794 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:33.808 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x17, 0x00, 0xfe
+2018-01-20 07:26:33.808 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x17 received (expected 0x17)
+2018-01-20 07:26:33.808 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:33.808 Detail,   Expected callbackId was received
+2018-01-20 07:26:33.821 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x07, 0x00, 0x00, 0x03, 0x02, 0xa1
+2018-01-20 07:26:33.821 Detail, 
+2018-01-20 07:26:33.821 Info, Node002, Response RTT 32 Average Response RTT 34
+2018-01-20 07:26:33.821 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:26:33.821 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:26:33.821 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 07:26:33.821 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.821 Info, Node002,     Previous value was 7.70W, received 263 seconds ago.
+2018-01-20 07:26:33.821 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.821 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.821 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:33.821 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:33.821 Detail, 
+2018-01-20 07:26:33.821 Detail, Node002, Removing current message
+2018-01-20 07:26:33.821 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.823 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.826 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.827 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.830 Detail, 
+2018-01-20 07:26:33.830 Info, Node002, Sending (Send) message (Callback ID=0x18, Expected Reply=0x04) - MeterCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x32, 0x01, 0x20, 0x25, 0x18, 0xc9
+2018-01-20 07:26:33.835 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:33.835 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:33.850 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x18, 0x00, 0xf1
+2018-01-20 07:26:33.850 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x18 received (expected 0x18)
+2018-01-20 07:26:33.850 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:33.850 Detail,   Expected callbackId was received
+2018-01-20 07:26:33.861 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x2f, 0xfc, 0x01, 0x07, 0x2f, 0xf3, 0x39
+2018-01-20 07:26:33.861 Detail, 
+2018-01-20 07:26:33.861 Info, Node002, Response RTT 31 Average Response RTT 32
+2018-01-20 07:26:33.862 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:26:33.862 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:26:33.862 Info, Node002, Received Meter report from node 2: Voltage=122.84V
+2018-01-20 07:26:33.862 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.862 Info, Node002,     Previous value was 122.75V, received 263 seconds ago.
+2018-01-20 07:26:33.862 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.862 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.862 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:33.862 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:33.862 Detail, 
+2018-01-20 07:26:33.862 Detail, Node002, Removing current message
+2018-01-20 07:26:33.862 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.864 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.865 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.867 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.870 Detail, 
+2018-01-20 07:26:33.870 Info, Node002, Sending (Send) message (Callback ID=0x19, Expected Reply=0x04) - MeterCmd_Get (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x32, 0x01, 0x28, 0x25, 0x19, 0xc0
+2018-01-20 07:26:33.875 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:33.875 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:33.890 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x19, 0x00, 0xf0
+2018-01-20 07:26:33.890 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x19 received (expected 0x19)
+2018-01-20 07:26:33.890 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:33.890 Detail,   Expected callbackId was received
+2018-01-20 07:26:33.901 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x07, 0x00, 0x07, 0x39
+2018-01-20 07:26:33.901 Detail, 
+2018-01-20 07:26:33.901 Info, Node002, Response RTT 31 Average Response RTT 31
+2018-01-20 07:26:33.901 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:26:33.901 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:26:33.901 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:26:33.901 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.901 Info, Node002,     Previous value was 0.07A, received 263 seconds ago.
+2018-01-20 07:26:33.901 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.901 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.901 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:33.901 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:33.901 Detail, 
+2018-01-20 07:26:33.901 Detail, Node002, Removing current message
+2018-01-20 07:26:33.901 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.905 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.908 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.911 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.914 Detail, 
+2018-01-20 07:26:33.914 Info, Node002, Sending (Send) message (Callback ID=0x1a, Expected Reply=0x04) - AlarmCmd_Get (Node=2): 0x01, 0x0c, 0x00, 0x13, 0x02, 0x05, 0x71, 0x04, 0x00, 0x08, 0x01, 0x25, 0x1a, 0xa4
+2018-01-20 07:26:33.920 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:26:33.920 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:26:33.935 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x1a, 0x00, 0xf3
+2018-01-20 07:26:33.935 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x1a received (expected 0x1a)
+2018-01-20 07:26:33.935 Info, Node002, Request RTT 20 Average Request RTT 20
+2018-01-20 07:26:33.935 Detail,   Expected callbackId was received
+2018-01-20 07:26:33.946 Detail, Node002,   Received: 0x01, 0x0f, 0x00, 0x04, 0x00, 0x02, 0x09, 0x71, 0x05, 0x00, 0x00, 0x00, 0xff, 0x08, 0xfe, 0x00, 0x82
+2018-01-20 07:26:33.946 Detail, 
+2018-01-20 07:26:33.946 Info, Node002, Response RTT 32 Average Response RTT 31
+2018-01-20 07:26:33.946 Info, Node002, Received Alarm report: type=0, level=0, sensorSrcID=0, type:Power Management event:254, status=255
+2018-01-20 07:26:33.946 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.946 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.946 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.946 Detail, Node002, Initial read of value
+2018-01-20 07:26:33.946 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:26:33.946 Detail, Node002,   Message transaction complete
+2018-01-20 07:26:33.946 Detail, 
+2018-01-20 07:26:33.946 Detail, Node002, Removing current message
+2018-01-20 07:26:33.946 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.958 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.963 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.966 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:26:33.972 Detail, Node002, Query Stage Complete (Dynamic)
+2018-01-20 07:26:33.972 Detail, Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Configuration live=1
+2018-01-20 07:26:33.972 Detail, Node002, QueryStage_Configuration
+2018-01-20 07:26:33.972 Detail, Node002, QueryStage_Complete
+2018-01-20 07:26:33.972 Warning, CheckCompletedNodeQueries m_allNodesQueried=0 m_awakeNodesQueried=0
+2018-01-20 07:26:33.972 Warning, CheckCompletedNodeQueries all=1, deadFound=1 sleepingOnly=1
+2018-01-20 07:26:33.972 Info,          Node query processing complete except for dead nodes.
+2018-01-20 07:26:33.972 Detail, Node002, Notification: NodeQueriesComplete
+2018-01-20 07:26:33.975 Detail, contrlr, Notification: AllNodesQueriedSomeDead
+2018-01-20 07:27:12.675 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x00, 0x27, 0x00, 0x00, 0x00, 0x02, 0x91
+2018-01-20 07:27:12.676 Detail, 
+2018-01-20 07:27:12.676 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:27:12.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:12.676 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 07:27:12.676 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:27:12.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:12.676 Info, Node002,     Previous value was 0.02kWh, received 39 seconds ago.
+2018-01-20 07:27:12.676 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:27:12.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:12.676 Detail, Node002, Refreshed Value: old value=263, new value=39, type=int
+2018-01-20 07:27:12.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:12.676 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:12.681 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:12.683 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:12.685 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:13.757 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x00, 0x27, 0x00, 0x00, 0x00, 0x00, 0x81
+2018-01-20 07:27:13.757 Detail, 
+2018-01-20 07:27:13.757 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:27:13.757 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:13.757 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 07:27:13.757 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:27:13.757 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:13.757 Info, Node002,     Previous value was 0.00W, received 39 seconds ago.
+2018-01-20 07:27:13.757 Detail, Node002, Refreshed Value: old value=7.70, new value=0.00, type=decimal
+2018-01-20 07:27:13.757 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:13.757 Detail, Node002, Refreshed Value: old value=263, new value=39, type=int
+2018-01-20 07:27:13.757 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:13.757 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:13.762 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:13.765 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:13.767 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:14.663 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x2f, 0xe5, 0x00, 0x27, 0x2f, 0xfc, 0x0e
+2018-01-20 07:27:14.663 Detail, 
+2018-01-20 07:27:14.663 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:27:14.663 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:14.663 Info, Node002, Received Meter report from node 2: Voltage=122.61V
+2018-01-20 07:27:14.663 Detail, Node002, Refreshed Value: old value=122.84, new value=122.61, type=decimal
+2018-01-20 07:27:14.663 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:14.663 Info, Node002,     Previous value was 122.84V, received 39 seconds ago.
+2018-01-20 07:27:14.663 Detail, Node002, Refreshed Value: old value=122.75, new value=122.84, type=decimal
+2018-01-20 07:27:14.663 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:14.663 Detail, Node002, Refreshed Value: old value=263, new value=39, type=int
+2018-01-20 07:27:14.663 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:14.663 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:14.668 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:14.670 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:14.673 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:15.756 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x00, 0x27, 0x00, 0x00, 0x1f
+2018-01-20 07:27:15.756 Detail, 
+2018-01-20 07:27:15.756 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:27:15.756 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:15.756 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:27:15.756 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:27:15.756 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:15.756 Info, Node002,     Previous value was 0.00A, received 39 seconds ago.
+2018-01-20 07:27:15.756 Detail, Node002, Refreshed Value: old value=0.07, new value=0.00, type=decimal
+2018-01-20 07:27:15.756 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:15.756 Detail, Node002, Refreshed Value: old value=263, new value=39, type=int
+2018-01-20 07:27:15.756 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:27:15.756 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:15.762 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:15.764 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:27:15.766 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:15.095 Detail, Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x25, 0x03, 0xff, 0x2a
+2018-01-20 07:32:15.095 Detail, 
+2018-01-20 07:32:15.095 Info, Node002, Received SwitchBinary report from node 2: level=On
+2018-01-20 07:32:15.095 Detail, Node002, Refreshed Value: old value=true, new value=true, type=bool
+2018-01-20 07:32:15.095 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:15.095 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:21.105 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xb6
+2018-01-20 07:32:21.105 Detail, 
+2018-01-20 07:32:21.105 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:32:21.105 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:21.105 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 07:32:21.105 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:32:21.105 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:21.105 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:21.111 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:22.094 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xa6
+2018-01-20 07:32:22.094 Detail, 
+2018-01-20 07:32:22.094 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:32:22.094 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:22.094 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 07:32:22.094 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:32:22.094 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:22.095 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:22.100 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:22.865 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x2f, 0xfe, 0x00, 0x00, 0x00, 0x00, 0xe1
+2018-01-20 07:32:22.865 Detail, 
+2018-01-20 07:32:22.865 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:32:22.865 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:22.865 Info, Node002, Received Meter report from node 2: Voltage=122.86V
+2018-01-20 07:32:22.865 Detail, Node002, Refreshed Value: old value=122.61, new value=122.86, type=decimal
+2018-01-20 07:32:22.865 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:22.865 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:22.872 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:24.111 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x38
+2018-01-20 07:32:24.111 Detail, 
+2018-01-20 07:32:24.111 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:32:24.111 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:24.111 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:32:24.112 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:32:24.112 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:24.112 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:24.118 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:24.188 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x38
+2018-01-20 07:32:24.188 Detail, 
+2018-01-20 07:32:24.188 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:32:24.188 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:24.188 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:32:24.188 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:32:24.189 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:24.189 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:24.194 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:50.533 Info, Node002, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-01-20 07:32:50.533 Info, Node002, SwitchBinary::Set - Setting node 2 to Off
+2018-01-20 07:32:50.533 Detail, Node002, Queuing (Send) SwitchBinaryCmd_Set (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x25, 0x01, 0x00, 0x25, 0x1b, 0xfd
+2018-01-20 07:32:50.533 Detail, Node002, Queuing (Send) SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x25, 0x1c, 0xfb
+2018-01-20 07:32:50.534 Detail, 
+2018-01-20 07:32:50.534 Info, Node002, Sending (Send) message (Callback ID=0x1b, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x25, 0x01, 0x00, 0x25, 0x1b, 0xfd
+2018-01-20 07:32:50.539 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:32:50.540 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:32:50.621 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x1b, 0x00, 0xf2
+2018-01-20 07:32:50.621 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x1b received (expected 0x1b)
+2018-01-20 07:32:50.621 Info, Node002, Request RTT 87 Average Request RTT 53
+2018-01-20 07:32:50.621 Detail,   Expected callbackId was received
+2018-01-20 07:32:50.621 Detail,   Expected reply was received
+2018-01-20 07:32:50.621 Detail,   Message transaction complete
+2018-01-20 07:32:50.621 Detail, 
+2018-01-20 07:32:50.621 Detail, Node002, Removing current message
+2018-01-20 07:32:50.621 Detail, 
+2018-01-20 07:32:50.621 Info, Node002, Sending (Send) message (Callback ID=0x1c, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x25, 0x1c, 0xfb
+2018-01-20 07:32:50.627 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:32:50.627 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:32:50.641 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x1c, 0x00, 0xf5
+2018-01-20 07:32:50.641 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x1c received (expected 0x1c)
+2018-01-20 07:32:50.641 Info, Node002, Request RTT 20 Average Request RTT 36
+2018-01-20 07:32:50.641 Detail,   Expected callbackId was received
+2018-01-20 07:32:50.651 Detail, Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x25, 0x03, 0x00, 0xd5
+2018-01-20 07:32:50.651 Detail, 
+2018-01-20 07:32:50.652 Info, Node002, Response RTT 30 Average Response RTT 30
+2018-01-20 07:32:50.652 Info, Node002, Received SwitchBinary report from node 2: level=Off
+2018-01-20 07:32:50.652 Detail, Node002, Refreshed Value: old value=true, new value=false, type=bool
+2018-01-20 07:32:50.652 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:50.652 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:32:50.652 Detail, Node002,   Message transaction complete
+2018-01-20 07:32:50.652 Detail, 
+2018-01-20 07:32:50.652 Detail, Node002, Removing current message
+2018-01-20 07:32:50.652 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:52.998 Info, Node002, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - True
+2018-01-20 07:32:52.998 Info, Node002, SwitchBinary::Set - Setting node 2 to On
+2018-01-20 07:32:52.998 Detail, Node002, Queuing (Send) SwitchBinaryCmd_Set (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x25, 0x01, 0xff, 0x25, 0x1d, 0x04
+2018-01-20 07:32:52.998 Detail, Node002, Queuing (Send) SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x25, 0x1e, 0xf9
+2018-01-20 07:32:52.998 Detail, 
+2018-01-20 07:32:52.998 Info, Node002, Sending (Send) message (Callback ID=0x1d, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x25, 0x01, 0xff, 0x25, 0x1d, 0x04
+2018-01-20 07:32:53.004 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:32:53.004 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:32:53.019 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x1d, 0x00, 0xf4
+2018-01-20 07:32:53.019 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x1d received (expected 0x1d)
+2018-01-20 07:32:53.019 Info, Node002, Request RTT 21 Average Request RTT 28
+2018-01-20 07:32:53.019 Detail,   Expected callbackId was received
+2018-01-20 07:32:53.019 Detail,   Expected reply was received
+2018-01-20 07:32:53.019 Detail,   Message transaction complete
+2018-01-20 07:32:53.019 Detail, 
+2018-01-20 07:32:53.019 Detail, Node002, Removing current message
+2018-01-20 07:32:53.019 Detail, 
+2018-01-20 07:32:53.019 Info, Node002, Sending (Send) message (Callback ID=0x1e, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x25, 0x1e, 0xf9
+2018-01-20 07:32:53.025 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-01-20 07:32:53.025 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-01-20 07:32:53.039 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x1e, 0x00, 0xf7
+2018-01-20 07:32:53.039 Detail, Node002,   ZW_SEND_DATA Request with callback ID 0x1e received (expected 0x1e)
+2018-01-20 07:32:53.039 Info, Node002, Request RTT 20 Average Request RTT 24
+2018-01-20 07:32:53.040 Detail,   Expected callbackId was received
+2018-01-20 07:32:53.086 Detail, Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x25, 0x03, 0xff, 0x2a
+2018-01-20 07:32:53.086 Detail, 
+2018-01-20 07:32:53.086 Info, Node002, Response RTT 67 Average Response RTT 48
+2018-01-20 07:32:53.086 Info, Node002, Received SwitchBinary report from node 2: level=On
+2018-01-20 07:32:53.086 Detail, Node002, Refreshed Value: old value=false, new value=true, type=bool
+2018-01-20 07:32:53.086 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:53.086 Detail, Node002,   Expected reply and command class was received
+2018-01-20 07:32:53.086 Detail, Node002,   Message transaction complete
+2018-01-20 07:32:53.086 Detail, 
+2018-01-20 07:32:53.086 Detail, Node002, Removing current message
+2018-01-20 07:32:53.086 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:53.155 Detail, Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x25, 0x03, 0xff, 0x2a
+2018-01-20 07:32:53.155 Detail, 
+2018-01-20 07:32:53.155 Info, Node002, Received SwitchBinary report from node 2: level=On
+2018-01-20 07:32:53.155 Detail, Node002, Refreshed Value: old value=true, new value=true, type=bool
+2018-01-20 07:32:53.155 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:53.155 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:58.125 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x00, 0x26, 0x00, 0x00, 0x00, 0x02, 0x90
+2018-01-20 07:32:58.125 Detail, 
+2018-01-20 07:32:58.125 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:32:58.125 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:58.125 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 07:32:58.125 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:32:58.125 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:58.125 Info, Node002,     Previous value was 0.02kWh, received 38 seconds ago.
+2018-01-20 07:32:58.125 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:32:58.125 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:58.125 Detail, Node002, Refreshed Value: old value=39, new value=38, type=int
+2018-01-20 07:32:58.125 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:58.125 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:58.131 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:58.133 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:58.135 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:58.871 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x06, 0xda, 0x00, 0x26, 0x00, 0x00, 0x00, 0x00, 0x5c
+2018-01-20 07:32:58.871 Detail, 
+2018-01-20 07:32:58.871 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:32:58.871 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:58.871 Info, Node002, Received Meter report from node 2: Power=17.54W
+2018-01-20 07:32:58.872 Detail, Node002, Refreshed Value: old value=0.00, new value=17.54, type=decimal
+2018-01-20 07:32:58.872 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:58.872 Info, Node002,     Previous value was 0.00W, received 38 seconds ago.
+2018-01-20 07:32:58.872 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:32:58.872 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:58.872 Detail, Node002, Refreshed Value: old value=39, new value=38, type=int
+2018-01-20 07:32:58.872 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:32:58.872 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:58.878 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:58.885 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:32:58.890 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:33:00.093 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x2f, 0xee, 0x00, 0x26, 0x2f, 0xfe, 0x06
+2018-01-20 07:33:00.093 Detail, 
+2018-01-20 07:33:00.093 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:33:00.093 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:33:00.093 Info, Node002, Received Meter report from node 2: Voltage=122.70V
+2018-01-20 07:33:00.093 Detail, Node002, Refreshed Value: old value=122.86, new value=122.70, type=decimal
+2018-01-20 07:33:00.093 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:33:00.093 Info, Node002,     Previous value was 122.86V, received 38 seconds ago.
+2018-01-20 07:33:00.093 Detail, Node002, Refreshed Value: old value=122.84, new value=122.86, type=decimal
+2018-01-20 07:33:00.093 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:33:00.093 Detail, Node002, Refreshed Value: old value=39, new value=38, type=int
+2018-01-20 07:33:00.093 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:33:00.093 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:33:00.099 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:33:00.105 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:33:00.111 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:33:00.870 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x18, 0x00, 0x26, 0x00, 0x00, 0x06
+2018-01-20 07:33:00.870 Detail, 
+2018-01-20 07:33:00.870 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:33:00.870 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:33:00.870 Info, Node002, Received Meter report from node 2: Current=0.24A
+2018-01-20 07:33:00.870 Detail, Node002, Refreshed Value: old value=0.00, new value=0.24, type=decimal
+2018-01-20 07:33:00.870 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:33:00.870 Info, Node002,     Previous value was 0.00A, received 38 seconds ago.
+2018-01-20 07:33:00.870 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:33:00.870 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:33:00.870 Detail, Node002, Refreshed Value: old value=39, new value=38, type=int
+2018-01-20 07:33:00.870 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:33:00.870 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:33:00.877 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:33:00.883 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:33:00.888 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:34:24.847 Detail, Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x25, 0x03, 0xff, 0x2a
+2018-01-20 07:34:24.847 Detail, 
+2018-01-20 07:34:24.847 Info, Node002, Received SwitchBinary report from node 2: level=On
+2018-01-20 07:34:24.847 Detail, Node002, Refreshed Value: old value=true, new value=true, type=bool
+2018-01-20 07:34:24.847 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:34:24.847 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:34:24.883 Detail, Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x25, 0x03, 0xff, 0x2a
+2018-01-20 07:34:24.883 Detail, 
+2018-01-20 07:34:24.883 Info, Node002, Received SwitchBinary report from node 2: level=On
+2018-01-20 07:34:24.883 Detail, Node002, Refreshed Value: old value=true, new value=true, type=bool
+2018-01-20 07:34:24.883 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:34:24.883 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:34:30.857 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xb6
+2018-01-20 07:34:30.857 Detail, 
+2018-01-20 07:34:30.857 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:34:30.857 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:34:30.857 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 07:34:30.857 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:34:30.857 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:34:30.857 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:34:30.864 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:34:31.846 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xa6
+2018-01-20 07:34:31.846 Detail, 
+2018-01-20 07:34:31.847 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:34:31.847 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:34:31.847 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 07:34:31.847 Detail, Node002, Refreshed Value: old value=17.54, new value=0.00, type=decimal
+2018-01-20 07:34:31.847 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:34:31.847 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:34:31.853 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:34:32.617 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x2f, 0xde, 0x00, 0x00, 0x00, 0x00, 0xc1
+2018-01-20 07:34:32.617 Detail, 
+2018-01-20 07:34:32.617 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:34:32.617 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:34:32.617 Info, Node002, Received Meter report from node 2: Voltage=122.54V
+2018-01-20 07:34:32.617 Detail, Node002, Refreshed Value: old value=122.70, new value=122.54, type=decimal
+2018-01-20 07:34:32.617 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:34:32.617 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:34:32.623 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:34:33.845 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x38
+2018-01-20 07:34:33.845 Detail, 
+2018-01-20 07:34:33.845 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:34:33.845 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:34:33.845 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:34:33.845 Detail, Node002, Refreshed Value: old value=0.24, new value=0.00, type=decimal
+2018-01-20 07:34:33.845 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:34:33.845 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:34:33.851 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:30.828 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x02, 0x9a
+2018-01-20 07:39:30.828 Detail, 
+2018-01-20 07:39:30.828 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:39:30.828 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:30.828 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 07:39:30.829 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:39:30.829 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:30.829 Info, Node002,     Previous value was 0.02kWh, received 301 seconds ago.
+2018-01-20 07:39:30.829 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:39:30.829 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:30.829 Detail, Node002, Refreshed Value: old value=38, new value=301, type=int
+2018-01-20 07:39:30.829 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:30.829 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:30.834 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:30.840 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:30.846 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:31.818 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x00, 0x8a
+2018-01-20 07:39:31.818 Detail, 
+2018-01-20 07:39:31.818 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:39:31.818 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:31.818 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 07:39:31.818 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:39:31.818 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:31.818 Info, Node002,     Previous value was 0.00W, received 301 seconds ago.
+2018-01-20 07:39:31.818 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:39:31.818 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:31.818 Detail, Node002, Refreshed Value: old value=38, new value=301, type=int
+2018-01-20 07:39:31.818 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:31.818 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:31.825 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:31.831 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:31.836 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:32.632 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0x70, 0x01, 0x2d, 0x2f, 0xde, 0xad
+2018-01-20 07:39:32.632 Detail, 
+2018-01-20 07:39:32.632 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:39:32.632 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:32.632 Info, Node002, Received Meter report from node 2: Voltage=124.00V
+2018-01-20 07:39:32.632 Detail, Node002, Refreshed Value: old value=122.54, new value=124.00, type=decimal
+2018-01-20 07:39:32.632 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:32.632 Info, Node002,     Previous value was 122.54V, received 301 seconds ago.
+2018-01-20 07:39:32.632 Detail, Node002, Refreshed Value: old value=122.86, new value=122.54, type=decimal
+2018-01-20 07:39:32.632 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:32.632 Detail, Node002, Refreshed Value: old value=38, new value=301, type=int
+2018-01-20 07:39:32.632 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:32.632 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:32.639 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:32.644 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:32.649 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:33.817 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x14
+2018-01-20 07:39:33.817 Detail, 
+2018-01-20 07:39:33.817 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:39:33.817 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:33.817 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:39:33.817 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:39:33.817 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:33.817 Info, Node002,     Previous value was 0.00A, received 301 seconds ago.
+2018-01-20 07:39:33.817 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:39:33.817 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:33.817 Detail, Node002, Refreshed Value: old value=38, new value=301, type=int
+2018-01-20 07:39:33.817 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:39:33.817 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:33.822 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:33.825 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:39:33.826 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:30.655 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x02, 0x9a
+2018-01-20 07:44:30.655 Detail, 
+2018-01-20 07:44:30.655 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:44:30.655 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:30.655 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 07:44:30.655 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:44:30.655 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:30.655 Info, Node002,     Previous value was 0.02kWh, received 301 seconds ago.
+2018-01-20 07:44:30.655 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:44:30.655 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:30.655 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:44:30.655 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:30.655 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:30.658 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:30.660 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:30.663 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:31.789 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x00, 0x8a
+2018-01-20 07:44:31.789 Detail, 
+2018-01-20 07:44:31.789 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:44:31.789 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:31.789 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 07:44:31.789 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:44:31.789 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:31.789 Info, Node002,     Previous value was 0.00W, received 301 seconds ago.
+2018-01-20 07:44:31.789 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:44:31.789 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:31.789 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:44:31.789 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:31.790 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:31.795 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:31.797 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:31.799 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:31.856 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x00, 0x8a
+2018-01-20 07:44:31.856 Detail, 
+2018-01-20 07:44:31.856 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:44:31.856 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:31.856 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 07:44:31.856 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:44:31.856 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:31.856 Info, Node002,     Previous value was 0.00W, received 301 seconds ago.
+2018-01-20 07:44:31.856 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:44:31.856 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:31.856 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:44:31.856 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:31.856 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:31.862 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:31.868 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:31.874 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:32.642 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0x5f, 0x01, 0x2d, 0x30, 0x70, 0x33
+2018-01-20 07:44:32.642 Detail, 
+2018-01-20 07:44:32.642 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:44:32.642 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:32.643 Info, Node002, Received Meter report from node 2: Voltage=123.83V
+2018-01-20 07:44:32.643 Detail, Node002, Refreshed Value: old value=124.00, new value=123.83, type=decimal
+2018-01-20 07:44:32.643 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:32.643 Info, Node002,     Previous value was 124.00V, received 301 seconds ago.
+2018-01-20 07:44:32.643 Detail, Node002, Refreshed Value: old value=122.54, new value=124.00, type=decimal
+2018-01-20 07:44:32.643 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:32.643 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:44:32.643 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:32.643 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:32.649 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:32.655 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:32.661 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:33.686 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x14
+2018-01-20 07:44:33.686 Detail, 
+2018-01-20 07:44:33.686 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:44:33.686 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:33.686 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:44:33.686 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:44:33.686 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:33.686 Info, Node002,     Previous value was 0.00A, received 301 seconds ago.
+2018-01-20 07:44:33.686 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:44:33.686 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:33.686 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:44:33.686 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:33.686 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:33.693 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:33.702 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:33.710 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:33.716 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x14
+2018-01-20 07:44:33.716 Detail, 
+2018-01-20 07:44:33.716 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:44:33.716 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:33.716 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:44:33.716 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:44:33.716 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:33.716 Info, Node002,     Previous value was 0.00A, received 301 seconds ago.
+2018-01-20 07:44:33.716 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:44:33.716 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:33.716 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:44:33.716 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:44:33.716 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:33.723 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:33.729 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:44:33.732 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:30.775 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x02, 0x9a
+2018-01-20 07:49:30.775 Detail, 
+2018-01-20 07:49:30.775 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:49:30.775 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:30.775 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 07:49:30.775 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:49:30.775 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:30.775 Info, Node002,     Previous value was 0.02kWh, received 301 seconds ago.
+2018-01-20 07:49:30.775 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:49:30.775 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:30.775 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:49:30.775 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:30.775 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:30.785 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:30.791 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:30.797 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:31.773 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x00, 0x8a
+2018-01-20 07:49:31.773 Detail, 
+2018-01-20 07:49:31.773 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:49:31.773 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:31.773 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 07:49:31.773 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:49:31.773 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:31.773 Info, Node002,     Previous value was 0.00W, received 301 seconds ago.
+2018-01-20 07:49:31.773 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:49:31.773 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:31.773 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:49:31.773 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:31.773 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:31.780 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:31.787 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:31.792 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:32.655 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0x4e, 0x01, 0x2d, 0x30, 0x5f, 0x0d
+2018-01-20 07:49:32.655 Detail, 
+2018-01-20 07:49:32.655 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:49:32.655 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:32.655 Info, Node002, Received Meter report from node 2: Voltage=123.66V
+2018-01-20 07:49:32.655 Detail, Node002, Refreshed Value: old value=123.83, new value=123.66, type=decimal
+2018-01-20 07:49:32.655 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:32.655 Info, Node002,     Previous value was 123.83V, received 301 seconds ago.
+2018-01-20 07:49:32.655 Detail, Node002, Refreshed Value: old value=124.00, new value=123.83, type=decimal
+2018-01-20 07:49:32.655 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:32.655 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:49:32.655 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:32.655 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:32.673 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:32.684 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:32.695 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:33.762 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x14
+2018-01-20 07:49:33.763 Detail, 
+2018-01-20 07:49:33.763 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:49:33.763 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:33.763 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:49:33.763 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:49:33.763 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:33.763 Info, Node002,     Previous value was 0.00A, received 301 seconds ago.
+2018-01-20 07:49:33.763 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:49:33.763 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:33.763 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:49:33.763 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:49:33.763 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:33.769 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:33.775 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:49:33.781 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:30.675 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x02, 0x9a
+2018-01-20 07:54:30.675 Detail, 
+2018-01-20 07:54:30.675 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:54:30.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:30.676 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 07:54:30.676 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:54:30.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:30.676 Info, Node002,     Previous value was 0.02kWh, received 301 seconds ago.
+2018-01-20 07:54:30.676 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:54:30.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:30.676 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:54:30.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:30.676 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:30.679 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:30.684 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:30.689 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:31.735 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x00, 0x8a
+2018-01-20 07:54:31.736 Detail, 
+2018-01-20 07:54:31.736 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:54:31.736 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:31.736 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 07:54:31.736 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:54:31.736 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:31.736 Info, Node002,     Previous value was 0.00W, received 301 seconds ago.
+2018-01-20 07:54:31.736 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:54:31.736 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:31.736 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:54:31.736 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:31.736 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:31.741 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:31.744 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:31.746 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:32.663 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0x37, 0x01, 0x2d, 0x30, 0x4e, 0x65
+2018-01-20 07:54:32.664 Detail, 
+2018-01-20 07:54:32.664 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:54:32.664 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:32.664 Info, Node002, Received Meter report from node 2: Voltage=123.43V
+2018-01-20 07:54:32.664 Detail, Node002, Refreshed Value: old value=123.66, new value=123.43, type=decimal
+2018-01-20 07:54:32.664 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:32.664 Info, Node002,     Previous value was 123.66V, received 301 seconds ago.
+2018-01-20 07:54:32.664 Detail, Node002, Refreshed Value: old value=123.83, new value=123.66, type=decimal
+2018-01-20 07:54:32.664 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:32.664 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:54:32.664 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:32.664 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:32.669 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:32.671 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:32.673 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:33.734 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x14
+2018-01-20 07:54:33.734 Detail, 
+2018-01-20 07:54:33.734 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:54:33.734 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:33.734 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:54:33.734 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:54:33.734 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:33.734 Info, Node002,     Previous value was 0.00A, received 301 seconds ago.
+2018-01-20 07:54:33.734 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:54:33.734 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:33.734 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:54:33.734 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:54:33.734 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:33.741 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:33.747 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:54:33.754 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:30.682 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x02, 0x9a
+2018-01-20 07:59:30.682 Detail, 
+2018-01-20 07:59:30.682 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:59:30.682 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:30.682 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 07:59:30.682 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:59:30.682 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:30.682 Info, Node002,     Previous value was 0.02kWh, received 301 seconds ago.
+2018-01-20 07:59:30.682 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 07:59:30.682 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:30.682 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:59:30.682 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:30.682 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:30.684 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:30.688 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:30.690 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:31.707 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x00, 0x8a
+2018-01-20 07:59:31.707 Detail, 
+2018-01-20 07:59:31.707 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:59:31.707 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:31.707 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 07:59:31.707 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:59:31.707 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:31.707 Info, Node002,     Previous value was 0.00W, received 301 seconds ago.
+2018-01-20 07:59:31.707 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:59:31.707 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:31.707 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:59:31.707 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:31.707 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:31.712 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:31.714 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:31.716 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:32.669 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0x0e, 0x01, 0x2d, 0x30, 0x37, 0x25
+2018-01-20 07:59:32.669 Detail, 
+2018-01-20 07:59:32.669 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:59:32.669 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:32.669 Info, Node002, Received Meter report from node 2: Voltage=123.02V
+2018-01-20 07:59:32.669 Detail, Node002, Refreshed Value: old value=123.43, new value=123.02, type=decimal
+2018-01-20 07:59:32.669 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:32.669 Info, Node002,     Previous value was 123.43V, received 301 seconds ago.
+2018-01-20 07:59:32.669 Detail, Node002, Refreshed Value: old value=123.66, new value=123.43, type=decimal
+2018-01-20 07:59:32.669 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:32.669 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:59:32.669 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:32.669 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:32.676 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:32.682 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:32.688 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:33.705 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x14
+2018-01-20 07:59:33.705 Detail, 
+2018-01-20 07:59:33.705 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 07:59:33.705 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:33.706 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 07:59:33.706 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:59:33.706 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:33.706 Info, Node002,     Previous value was 0.00A, received 301 seconds ago.
+2018-01-20 07:59:33.706 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 07:59:33.706 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:33.706 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 07:59:33.706 Detail, Node002, Changes to this value are not verified
+2018-01-20 07:59:33.706 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:33.712 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:33.718 Detail, Node002, Notification: ValueChanged
+2018-01-20 07:59:33.723 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:31.454 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x02, 0x9a
+2018-01-20 08:04:31.454 Detail, 
+2018-01-20 08:04:31.454 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:04:31.454 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:31.454 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 08:04:31.454 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 08:04:31.454 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:31.454 Info, Node002,     Previous value was 0.02kWh, received 301 seconds ago.
+2018-01-20 08:04:31.454 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 08:04:31.454 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:31.454 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:04:31.454 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:31.454 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:31.460 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:31.461 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:31.462 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:32.678 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x00, 0x8a
+2018-01-20 08:04:32.678 Detail, 
+2018-01-20 08:04:32.684 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:04:32.684 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:32.684 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 08:04:32.684 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:04:32.684 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:32.684 Info, Node002,     Previous value was 0.00W, received 301 seconds ago.
+2018-01-20 08:04:32.684 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:04:32.684 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:32.684 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:04:32.684 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:32.684 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:32.689 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:32.692 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:32.693 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:33.441 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0x03, 0x01, 0x2d, 0x30, 0x0e, 0x11
+2018-01-20 08:04:33.441 Detail, 
+2018-01-20 08:04:33.441 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:04:33.441 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:33.441 Info, Node002, Received Meter report from node 2: Voltage=122.91V
+2018-01-20 08:04:33.441 Detail, Node002, Refreshed Value: old value=123.02, new value=122.91, type=decimal
+2018-01-20 08:04:33.441 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:33.441 Info, Node002,     Previous value was 123.02V, received 301 seconds ago.
+2018-01-20 08:04:33.441 Detail, Node002, Refreshed Value: old value=123.43, new value=123.02, type=decimal
+2018-01-20 08:04:33.441 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:33.441 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:04:33.441 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:33.441 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:33.446 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:33.447 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:33.449 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:34.677 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x14
+2018-01-20 08:04:34.677 Detail, 
+2018-01-20 08:04:34.677 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:04:34.677 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:34.677 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 08:04:34.677 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:04:34.677 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:34.677 Info, Node002,     Previous value was 0.00A, received 301 seconds ago.
+2018-01-20 08:04:34.677 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:04:34.677 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:34.677 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:04:34.677 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:04:34.677 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:34.682 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:34.683 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:04:34.685 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:31.675 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x02, 0x9a
+2018-01-20 08:09:31.675 Detail, 
+2018-01-20 08:09:31.676 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:09:31.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:31.676 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 08:09:31.676 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 08:09:31.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:31.676 Info, Node002,     Previous value was 0.02kWh, received 301 seconds ago.
+2018-01-20 08:09:31.676 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 08:09:31.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:31.676 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:09:31.676 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:31.676 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:31.683 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:31.689 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:31.697 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:32.650 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x00, 0x8a
+2018-01-20 08:09:32.650 Detail, 
+2018-01-20 08:09:32.650 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:09:32.650 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:32.650 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 08:09:32.650 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:09:32.650 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:32.650 Info, Node002,     Previous value was 0.00W, received 301 seconds ago.
+2018-01-20 08:09:32.650 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:09:32.650 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:32.650 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:09:32.650 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:32.650 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:32.671 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:32.680 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:32.688 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:32.693 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x00, 0x8a
+2018-01-20 08:09:32.694 Detail, 
+2018-01-20 08:09:32.694 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:09:32.694 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:32.694 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 08:09:32.694 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:09:32.694 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:32.694 Info, Node002,     Previous value was 0.00W, received 301 seconds ago.
+2018-01-20 08:09:32.694 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:09:32.694 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:32.694 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:09:32.694 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:32.694 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:32.699 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:32.707 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:32.710 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:33.454 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0xa3, 0x01, 0x2d, 0x30, 0x03, 0xbc
+2018-01-20 08:09:33.454 Detail, 
+2018-01-20 08:09:33.455 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:09:33.455 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:33.455 Info, Node002, Received Meter report from node 2: Voltage=124.51V
+2018-01-20 08:09:33.455 Detail, Node002, Refreshed Value: old value=122.91, new value=124.51, type=decimal
+2018-01-20 08:09:33.455 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:33.455 Info, Node002,     Previous value was 122.91V, received 301 seconds ago.
+2018-01-20 08:09:33.455 Detail, Node002, Refreshed Value: old value=123.02, new value=122.91, type=decimal
+2018-01-20 08:09:33.455 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:33.455 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:09:33.455 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:33.455 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:33.462 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:33.468 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:33.474 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:34.648 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x14
+2018-01-20 08:09:34.648 Detail, 
+2018-01-20 08:09:34.648 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:09:34.648 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:34.648 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 08:09:34.648 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:09:34.648 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:34.648 Info, Node002,     Previous value was 0.00A, received 301 seconds ago.
+2018-01-20 08:09:34.648 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:09:34.648 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:34.648 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:09:34.649 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:34.649 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:34.656 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:34.661 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:34.668 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:34.736 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x14
+2018-01-20 08:09:34.736 Detail, 
+2018-01-20 08:09:34.736 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:09:34.736 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:34.736 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 08:09:34.736 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:09:34.736 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:34.736 Info, Node002,     Previous value was 0.00A, received 301 seconds ago.
+2018-01-20 08:09:34.736 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:09:34.736 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:34.736 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:09:34.737 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:09:34.737 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:34.744 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:34.749 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:09:34.757 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:31.476 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x00, 0x02, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x02, 0x9a
+2018-01-20 08:14:31.476 Detail, 
+2018-01-20 08:14:31.476 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:14:31.476 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:31.476 Info, Node002, Received Meter report from node 2: Energy=0.02kWh
+2018-01-20 08:14:31.476 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 08:14:31.476 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:31.476 Info, Node002,     Previous value was 0.02kWh, received 301 seconds ago.
+2018-01-20 08:14:31.476 Detail, Node002, Refreshed Value: old value=0.02, new value=0.02, type=decimal
+2018-01-20 08:14:31.476 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:31.476 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:14:31.476 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:31.476 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:31.480 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:31.482 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:31.485 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:32.621 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x00, 0x00, 0x8a
+2018-01-20 08:14:32.621 Detail, 
+2018-01-20 08:14:32.621 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:14:32.621 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:32.621 Info, Node002, Received Meter report from node 2: Power=0.00W
+2018-01-20 08:14:32.621 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:14:32.621 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:32.621 Info, Node002,     Previous value was 0.00W, received 301 seconds ago.
+2018-01-20 08:14:32.621 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:14:32.621 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:32.621 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:14:32.621 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:32.621 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:32.625 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:32.630 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:32.633 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:33.463 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0xe1, 0x01, 0x2d, 0x30, 0xa3, 0x5e
+2018-01-20 08:14:33.463 Detail, 
+2018-01-20 08:14:33.463 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:14:33.463 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:33.463 Info, Node002, Received Meter report from node 2: Voltage=125.13V
+2018-01-20 08:14:33.463 Detail, Node002, Refreshed Value: old value=124.51, new value=125.13, type=decimal
+2018-01-20 08:14:33.463 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:33.463 Info, Node002,     Previous value was 124.51V, received 301 seconds ago.
+2018-01-20 08:14:33.463 Detail, Node002, Refreshed Value: old value=122.91, new value=124.51, type=decimal
+2018-01-20 08:14:33.463 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:33.463 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:14:33.463 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:33.463 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:33.468 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:33.475 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:33.481 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:34.620 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x00, 0x01, 0x2d, 0x00, 0x00, 0x14
+2018-01-20 08:14:34.620 Detail, 
+2018-01-20 08:14:34.620 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-01-20 08:14:34.620 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:34.620 Info, Node002, Received Meter report from node 2: Current=0.00A
+2018-01-20 08:14:34.620 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:14:34.620 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:34.620 Info, Node002,     Previous value was 0.00A, received 301 seconds ago.
+2018-01-20 08:14:34.620 Detail, Node002, Refreshed Value: old value=0.00, new value=0.00, type=decimal
+2018-01-20 08:14:34.620 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:34.620 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-01-20 08:14:34.620 Detail, Node002, Changes to this value are not verified
+2018-01-20 08:14:34.620 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:34.626 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:34.634 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:14:34.640 Detail, Node002, Notification: ValueChanged
+2018-01-20 08:15:21.331 Info, mgr,     Manager::WriteConfig completed for driver with home ID of 0xea8cb1d2
+2018-01-20 08:15:22.333 Info, mgr,     Driver for controller /dev/ttyUSB0 pending removal
+2018-01-20 08:15:22.333 Detail, Notification: DriverRemoved
+2018-01-20 08:15:22.333 Always, ***************************************************************************
+2018-01-20 08:15:22.333 Always, *********************  Cumulative Network Statistics  *********************
+2018-01-20 08:15:22.333 Always, *** General
+2018-01-20 08:15:22.333 Always, Driver run time: . .  . 0 days, 0 hours, 49 minutes
+2018-01-20 08:15:22.333 Always, Frames processed: . . . . . . . . . . . . . . . . . . . . 122
+2018-01-20 08:15:22.333 Always, Total messages successfully received: . . . . . . . . . . 122
+2018-01-20 08:15:22.333 Always, Total Messages successfully sent: . . . . . . . . . . . . 32
+2018-01-20 08:15:22.333 Always, ACKs received from controller:  . . . . . . . . . . . . . 32
+2018-01-20 08:15:22.333 Always, *** Errors
+2018-01-20 08:15:22.333 Always, Unsolicited messages received while waiting for ACK:  . . 0
+2018-01-20 08:15:22.333 Always, Reads aborted due to timeouts:  . . . . . . . . . . . . . 0
+2018-01-20 08:15:22.333 Always, Bad checksum errors:  . . . . . . . . . . . . . . . . . . 0
+2018-01-20 08:15:22.333 Always, CANs received from controller:  . . . . . . . . . . . . . 0
+2018-01-20 08:15:22.333 Always, NAKs received from controller:  . . . . . . . . . . . . . 0
+2018-01-20 08:15:22.333 Always, Out of frame data flow errors:  . . . . . . . . . . . . . 0
+2018-01-20 08:15:22.333 Always, Messages retransmitted: . . . . . . . . . . . . . . . . . 0
+2018-01-20 08:15:22.333 Always, Messages dropped and not delivered: . . . . . . . . . . . 0
+2018-01-20 08:15:22.333 Always, ***************************************************************************
+2018-01-20 08:15:22.333 Detail, WriteMsg Wait Timeout m_currentMsg=00000000
+2018-01-20 08:15:24.337 Info, mgr,     Driver for controller /dev/ttyUSB0 removed
+2018-01-20 08:15:25.338 Error, mgr,     Manager::GetDriver failed - Home ID 0xea8cb1d2 is unknown
+2018-01-20 08:15:25.338 Warning, Exception: Manager.cpp:373 - 100 - Invalid HomeId passed to GetDriver
+2018-01-20 08:15:25.338 Info, mgr,     GetSendQueueCount() failed - _homeId -359878190 not found

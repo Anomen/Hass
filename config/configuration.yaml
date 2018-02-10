@@ -1,0 +1,44 @@
+homeassistant: !include includes/homeassistant.yaml
+group: !include includes/groups.yaml
+script: !include includes/scripts.yaml
+automation: !include includes/automations.yaml
+
+###################################################
+# Interface UI configurations
+###################################################
+frontend: !include includes/frontend.yaml # Enables the frontend
+config:   !include includes/config.yaml   # Enables configuration UI
+history: # Enables support for tracking state changes over time
+logbook: # View all events in a logbook
+logger:
+
+###################################################
+# Devices
+###################################################
+remote:       !include includes/remote.yaml
+hue:          !include includes/hue.yaml
+media_player: !include includes/media_player.yaml
+lock:         !include includes/lock.yaml
+switch:       !include includes/switch.yaml
+#zwave:
+#  usb_path: /dev/ttyUSB0
+#zigbee:6
+#  device: /dev/ttyUSB1
+#zha:
+#  usb_path: /dev/ttyUSB1
+#  database_path: zigbee.db
+
+###################################################
+# Sensors
+###################################################
+sun: !include includes/sun.yaml
+sensor: !include includes/sensor.yaml
+
+###################################################
+# Services
+###################################################
+mqtt: !include includes/mqtt.yaml
+http: !include includes/http.yaml
+timer: !include includes/timer.yaml
+notify: !include includes/notify.yaml
+

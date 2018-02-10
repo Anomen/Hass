@@ -1,0 +1,178 @@
+##########################################################
+## Eclairage dans la salle de bain
+##########################################################
+
+#########################
+# MOTIONS
+#########################
+- alias: 'Turn on lights on motions in the bathroom'
+  trigger:
+    - platform: state
+      entity_id: sensor.sdb__motion
+      to: 'active'
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.salle_de_bain
+
+- alias: 'Turn off lights on motions in the bathroom'
+  trigger:
+    - platform: state
+      entity_id: sensor.sdb__motion
+      to: 'inactive'
+  action:
+    service: homeassistant.turn_off
+    entity_id: light.salle_de_bain
+
+#########################
+# SWITCH
+#########################
+- alias: 'Bathroom Buttons to toggle the lights'
+  trigger:
+    - platform: state
+      entity_id: switch.sdb__switch
+      to: 'on'
+  action:
+    service: homeassistant.toggle
+    entity_id: light.salle_de_bain
+
+- alias: 'HACK - Put the button back to unpushed'
+  trigger:
+    - platform: state
+      entity_id: switch.sdb__switch
+      to: 'on'
+  action:
+    service: homeassistant.toggle
+    entity_id: switch.sdb__switch
+
+##########################################################
+## Home Assistant commands
+##########################################################
+- alias: 'Go to dodo'
+  trigger:
+    - platform: state
+      entity_id: switch.simulated_switch__dodo
+      to: 'on'
+  action:
+    - service: homeassistant.turn_off
+      entity_id:
+        - group.livingroom_view
+        - switch.simulated_switch__dodo
+
+##########################################################
+## Eclairage automatique de la lampe du salon en switch
+##########################################################
+- alias: 'HACK - Switch on lamp with Hue switch on'
+  trigger:
+    - platform: state
+      entity_id: light.salon__left_tv
+      to: 'on'
+  action:
+    - service: homeassistant.turn_on
+      entity_id:
+        - switch.living_room_switch
+- alias: 'HACK - Switch off lamp with Hue switch off'
+  trigger:
+    - platform: state
+      entity_id: light.salon__left_tv
+      to: 'off'
+  action:
+    - service: homeassistant.turn_off
+      entity_id:
+        - switch.living_room_switch
+
+##########################################################
+## Eclairage automatique de la lampe de la cuisine en switch
+##########################################################
+- alias: 'HACK - Switch on lamp with Hue switch on'
+  trigger:
+    - platform: state
+      entity_id: light.cuisine__four
+      to: 'on'
+  action:
+    - service: homeassistant.turn_on
+      entity_id:
+        - switch.kitchen_switch
+- alias: 'HACK - Switch off lamp with Hue switch off'
+  trigger:
+    - platform: state
+      entity_id: light.cuisine__four
+      to: 'off'
+  action:
+    - service: homeassistant.turn_off
+      entity_id:
+        - switch.kitchen_switch
+
+##########################################################
+## Allumer quand la serrure s'ouvre
+##########################################################
+- alias: 'Switch on the lights when coming back home'
+  trigger:
+    - platform: state
+      entity_id: lock.lock
+      to: 'unlocked'
+  action:
+    - service: homeassistant.turn_on
+      entity_id:
+        - group.livingroom_lights
+
+##########################################################
+## Eteindre quand plus à la maison
+##########################################################
+#- alias: 'Switch off everything if not at home'
+#  trigger:
+#    - platform: state
+#      entity_id: lock.lock
+#      to: 'locked'
+#  action:
+#    - service: timer.start
+#      entity_id:
+#        - timer.leave_home
+#
+#- trigger:
+#    - platform: event
+#      event_type: timer.finished
+#      event_data:
+#        entity_id: timer.leave_home
+#  condition:
+#    - condition: and
+#      conditions:
+#      - condition: state
+#        entity_id: lock.lock
+#        state: 'locked'
+#      - condition: state
+#        entity_id: sensor.presence
+#        state: 'not present'
+#  action:
+#    - service: homeassistant.turn_off
+#      entity_id:
+#        - group.lights
+#    - service: media_player.turn_off
+#      entity_id:
+#        - media_player.tv
+#    - service: media_player.turn_off
+#      entity_id:
+#        - media_player.audiocast
+#    - service: notify.pushbullet
+#      data:
+#        title: Lights turned off
+#        message: Automation
+
+- alias: 'Switch off everything if not at home'
+  trigger:
+    - platform: state
+      entity_id: sensor.presence
+      to: 'not present'
+  action:
+    - service: homeassistant.turn_off
+      entity_id:
+        - group.lights
+    - service: media_player.turn_off
+      entity_id:
+        - media_player.tv
+    - service: media_player.turn_off
+      entity_id:
+        - media_player.audiocast
+    - service: notify.pushbullet
+      data:
+        title: Lights turned off
+        message: Automation

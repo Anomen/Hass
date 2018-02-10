@@ -1,0 +1,33 @@
+music:
+  alias: Music
+  sequence:
+  - data:
+      entity_id: remote.music
+    service: remote.turn_on
+chromecast:
+  alias: Chromecast
+  sequence:
+  - data:
+      entity_id: remote.chromecast
+    service: remote.turn_on
+
+netflix:
+  alias: Netflix
+  sequence:
+  - data:
+      entity_id: remote.netflix
+    service: remote.turn_on
+
+amazon:
+  alias: Amazon
+  sequence:
+  - data:
+      entity_id: remote.amazon
+    service: remote.turn_on
+
+game:
+  alias: Game
+  sequence:
+  - data:
+      entity_id: remote.game
+    service: remote.turn_on

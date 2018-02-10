@@ -1,0 +1,5 @@
+'1516593448627':
+  alias: New Script
+  sequence:
+  - data: {}
+    service: remote.turn_on

@@ -1,0 +1,7 @@
+- platform: mqtt
+  state_topic: "smartthings/Z-Wave Lock/lock"
+  command_topic: "smartthings/Z-Wave Lock/lock"
+  payload_lock: "locked"
+  payload_unlock: "unlocked"
+  retain: true
+  name: "Lock"

@@ -1,0 +1,20 @@
+- platform: harmony
+  host: 192.168.1.114
+  name: Chromecast
+  activity: Chrome
+- platform: harmony
+  name: Music
+  host: 192.168.1.114
+  activity: Listen to Music
+- platform: harmony
+  name: Netflix
+  host: 192.168.1.114
+  activity: Netflix
+- platform: harmony
+  name: Amazon
+  host: 192.168.1.114
+  activity: Amazon
+- platform: harmony
+  name: Game
+  host: 192.168.1.114
+  activity: Game

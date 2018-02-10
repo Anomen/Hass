@@ -1,0 +1,47 @@
+- platform: mqtt
+  state_topic: "smartthings/Plug 2/switch"
+  command_topic: "smartthings/Plug 2/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+  name: "Kitchen switch"
+
+- platform: mqtt
+  state_topic: "smartthings/Plug 3/switch"
+  command_topic: "smartthings/Plug 3/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+  name: "Living room switch"
+
+- platform: mqtt
+  state_topic: "smartthings/Dodo/switch"
+  command_topic: "smartthings/Dodo/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+  name: "Simulated switch - dodo"
+
+- platform: mqtt
+  state_topic: "smartthings/sdb - Switch/button"
+  command_topic: "smartthings/sdb - Switch/button"
+  payload_on: "pushed"
+  payload_off: "unpushed"
+  retain: true
+  name: "Sdb - Switch"
+
+- platform: mqtt
+  state_topic: "smartthings/salon - left TV/switch"
+  command_topic: "smartthings/salon - left TV/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+  name: "Salon - Light Switch"
+
+- platform: mqtt
+  state_topic: "smartthings/cuisine - four/switch"
+  command_topic: "smartthings/cuisine - four/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+  name: "Kitchen - Light Switch"

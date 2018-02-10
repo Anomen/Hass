@@ -1,0 +1,9 @@
+- platform: yr
+
+- platform: mqtt
+  state_topic: "smartthings/Sdb - Motion/motion"
+  name: "Sdb - Motion"
+
+- platform: mqtt
+  state_topic: "smartthings/Kevin Vicrey's Android/presence"
+  name: "Presence"
